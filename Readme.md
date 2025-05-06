@@ -5,7 +5,7 @@
 - **Albert Steenstrup**  
 - **Franek Liszka**   
 
-**Institution**: IT University of Copenhagen  
+**Institution**: [IT University of Copenhagen](https://en.itu.dk)
 **Contact**: `{frli, albst}@itu.dk`
 
 ---
@@ -81,7 +81,8 @@ All code lives under src/ and is organized into four main Jupyter notebooks:
 
 ## Installation
 
-Agree to the Natural Scenes Dataset’s Terms and Conditions and fill out the NSD Data Access form.
+Agree to the [Natural Scenes Dataset’s Terms and Conditions](https://cvnlab.slite.page/p/IB6BSeW_7o/Terms-and-Conditions) and fill out the [NSD Data Access form](https://docs.google.com/forms/d/e/1FAIpQLSduTPeZo54uEMKD-ihXmRhx0hBDdLHNsVyeo_kCb8qbyAkXuQ/viewform?pli=1).
+
 
 Clone this repository and enter the `src/` directory:
 ```bash
