@@ -23,9 +23,22 @@ Rather than the full-scale MindEyeV2, we adapt for weaker compute:
 - Trained on a single session (~750 trials, ~1 hour) for one subject  
 
 Hardware: initially on an NVIDIA L4 (24 GB) via Lightning.ai Studio, then on Google Cloud Services  
-Logging: all runs tracked via Weights & Biases
 
 This project is a lightweight adaptation of [MindEyeV2](https://github.com/MedARC-AI/MindEyeV2/tree/main), originally developed by MedARC.
+
+### Training
+
+The model being trained is the **encoding model**, responsible for mapping fMRI brain activations into the CLIP image embedding space. This is a critical component of the brain-to-image reconstruction pipeline: it translates raw neural signals into a semantically rich latent representation that can later be used to generate visual reconstructions via a generative model.
+
+In this project, we fine-tuned the model using 1 hour of fMRI training data from a single subject. Key modifications were made to adapt the original MindEyeV2 architecture to run on constrained hardware (Nvidia L4 GPU with 24 GB memory).
+
+All training runs were tracked using [Weights & Biases](https://wandb.ai/site).
+
+The plots below illustrate key training metrics logged over the 50 epochs.
+
+![Training Metrics](./training_curves.png)
+
+This training confirms that with proper architectural scaling, MindEyeV2’s encoding model remains trainable on modest hardware while maintaining high representational accuracy.
 
 ---
 
