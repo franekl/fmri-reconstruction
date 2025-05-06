@@ -24,6 +24,8 @@ Rather than the full-scale MindEyeV2, we adapt for weaker compute:
 Hardware: initially on an NVIDIA L4 (24 GB) via Lightning.ai Studio, then on Google Cloud Services  
 Logging: all runs tracked via Weights & Biases
 
+This project is a lightweight adaptation of [MindEyeV2](https://github.com/MedARC-AI/MindEyeV2/tree/main), originally developed by MedARC.
+
 ---
 
 ## Goals
@@ -160,3 +162,5 @@ jupyter nbconvert --to notebook --execute final_evaluations.ipynb
 Scotti, P., Tripathy, S., Torrico, O., Kneeland, P., Chen, Z., Narang, S., … Abraham, A. (2024). MindEye2: Shared-Subject Models Enable fMRI-To-Image With 1 Hour of Data. *International Conference on Machine Learning*. arXiv:2403.11207
 
 Allen, E. J., St-Yves, G., Wu, Y., Breedlove, J. L., Prince, S., Dowdle, L. T., … Kay, K. N. (2021). A massive 7T fMRI dataset to bridge cognitive neuroscience and artificial intelligence. *Nature Neuroscience*  
+
+Original repository: [MedARC-AI/MindEyeV2](https://github.com/MedARC-AI/MindEyeV2/tree/main)
