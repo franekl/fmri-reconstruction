@@ -5,8 +5,9 @@
 - **Albert Steenstrup**  
 - **Franek Liszka**   
 
-**Institution**: [IT University of Copenhagen](https://en.itu.dk)\n
 **Contact**: `{frli, albst}@itu.dk`
+**Institution**: [IT University of Copenhagen](https://en.itu.dk)
+
 
 ---
 
