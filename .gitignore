@@ -5,10 +5,12 @@ add-google-cloud-ops-agent-repo.sh
 src/.locks
 src/autoencoder
 src/cache
-src/data
-src/generative_models
+src/data/betas*
+src/data/zavychromaxl_v30.safetensors
+src/data/coco_images_224_float16.hdf5
+src/generative_models/README.md
 src/models--laion--CLIP-ViT-B-32-laion2B-s34B-b79K
-src/evals
+src/evals/all_images.pt
 src/.gitattributes
 src/combine_notebooks.py
 src/combined_code_and_notebooks.txt
