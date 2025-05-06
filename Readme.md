@@ -26,6 +26,19 @@ Logging: all runs tracked via Weights & Biases
 
 ---
 
+## Goals
+
+### Low-Compute Adaptation
+Adapt the full MindEyeV2 pipeline to run on a single 24 GB GPU (NVIDIA L4) with reduced hidden dimensions, batch sizes, and a smaller CLIP backbone, while completing a full train + inference cycle in under a few hours.
+
+### Single-Session Reconstruction
+Train a subject-specific model on only 1 hour of fMRI data (~750 trials) and demonstrate that high-quality image reconstructions and caption predictions remain achievable.
+
+### Architecture & Hyperparameter Exploration
+Systematically vary and justify non-standard choices—hidden_dim (4096 → 1024), clip_seq_dim/clip_emb_dim (256×1664 → 49×768), disabling blurry_recon, CPU offload for text model—to identify configurations that balance performance and resource usage.
+
+---
+
 ## Repository Structure & Code Summary
 
 All code lives under src/ and is organized into four main Jupyter notebooks:
