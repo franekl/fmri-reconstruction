@@ -32,7 +32,7 @@ The model being trained is the **encoding model**, responsible for mapping fMRI 
 
 In this project, we fine-tuned the model using 1 hour of fMRI training data from a single subject. Key modifications were made to adapt the original MindEyeV2 architecture to run on constrained hardware (Nvidia L4 GPU with 24 GB memory).
 
-All training runs were tracked using [Weights & Biases](https://wandb.ai/site).
+All training runs were tracked using [Weights & Biases](https://wandb.ai/site). The full training procedure took **5 hours and 15 minutes** to complete over 50 epochs.
 
 The plots below illustrate key training metrics logged over the 50 epochs.
 
